@@ -1,0 +1,200 @@
+body,
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+
+}
+
+.content{
+    background-image: url('img/bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #1a315c;;
+    height: 90px;
+    max-width: 1920px;
+    min-width: 280px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-block{
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation: motion 6s linear infinite;
+}
+
+@keyframes motion {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity:0;
+    }
+    10% {
+        opacity: 1;
+    }
+    92% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.content-block.content-logo{
+    transform: translate(4%, 30%);
+    animation-name: logoMotion;
+}
+
+@keyframes logoMotion {
+    0% {
+        transform: translate(45%, 30%);
+    }
+    9% {
+        transform: translate(45%, 30%);
+    }
+    19% {
+        transform: translate(4%, 30%);
+    }
+    72% {
+        transform: translate(4%, 30%);
+    }
+    82% {
+        transform: translate(45%, 30%);
+    }
+    100%{
+        transform: translate(45%, 30%);
+    }
+}
+
+.content-logo_img{
+    display: block;
+    width: 200px;
+    height: 44px;
+}
+
+.content-block.content-img_first{
+    transform: translate(18%, -34%);
+    display: none;
+}
+
+.content-block.content-img_second{
+    transform: translate(25%, 10%);
+    display: none;
+}
+
+.content-block.content-img_third{
+    transform: translate(28%, -30%);
+    display: none;
+}
+
+.content-block.content-img_four{
+    transform: translate(68%, 10%);
+    display: none;
+}
+
+.content-block.content-img_five{
+    transform: translate(72%, -8%);
+    display: none;
+}
+
+.content-block.content-img_six{
+    transform: translate(77%, 10%);
+    display: none;
+}
+
+.hand-first_left{
+    width: 126px;
+    height: 152px;
+}
+
+.hand-second_left{
+    width: 54px;
+    height: 64px;
+    opacity: 0.5;
+}
+
+.hand-third_left{
+    width: 87px;
+    height: 105px;
+}
+
+.hand-first_right{
+    width: 60px;
+    height: 71px;
+}
+
+.hand-second_right{
+    width: 82px;
+    height: 100px;
+}
+
+.hand-third_right{
+    width: 54px;
+    height: 64px;
+    opacity: 0.5;
+}
+
+.content-block.content-text{
+   background-image: url('img/content_text_1920.png');
+    background-repeat: no-repeat;
+    background-position: 50% -10%;
+    background-size: 35%;
+    animation-name: textMotin;
+}
+
+@keyframes textMotin {
+    0% {
+        transform: translate(45%, 30%);
+    }
+    9% {
+        transform: translate(45%, 30%);
+    }
+    19% {
+        transform: translate(4%, 30%);
+    }
+    72% {
+        transform: translate(4%, 30%);
+    }
+    82% {
+        transform: translate(45%, 30%);
+    }
+    100%{
+        transform: translate(45%, 30%);
+    }
+}
+
+.content-btn{
+    position: absolute;
+    right: 60px;
+    top: 10px;
+}
+
+.main-btn{
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, #e02020 0%, #891010 100%);
+    padding: 16px 40px;
+    cursor: pointer;
+    border: 0px solid #ffffff;
+}
+
+
+
+
+
